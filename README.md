@@ -30,7 +30,7 @@ For example:
 
 > *"Give me a competitive 3v3 PvP build focused on sniping."*
 
-MIDA then:
+MIDA Build Tool then:
 
 1. **Analyses the player's inventory** to understand what gear they already own.
 2. **Interprets their request using AI** to understand their desired activity and playstyle.
@@ -43,7 +43,7 @@ MIDA then:
 
 <img width="2855" height="1593" alt="WALLPAPER" src="https://github.com/user-attachments/assets/b66aea32-6823-41d9-b3af-5f3ef159fb10" />
 
-**Describe what you want → MIDA analyses your gear → Get a personalised build → Equip it**
+**Describe what you want → MIDA Build Tool analyses your gear → Get a personalised build → Equip it**
 
 Instead of finding the theoretically best build and then discovering you're missing half of the required gear, MIDA focuses on finding the **best build you can actually make with your existing inventory**.
 
@@ -51,7 +51,7 @@ Instead of finding the theoretically best build and then discovering you're miss
 
 <img width="1920" height="1080" alt="20170819195222" src="https://github.com/user-attachments/assets/26232271-701d-4eb7-ab15-45b1881df177" />
 
-MIDA uses a monorepo structure, keeping the frontend, backend, infrastructure, build data, and documentation in a single repository while maintaining a clear separation of responsibilities.
+MIDA Build Tool uses a monorepo structure, keeping the frontend, backend, infrastructure, build data, and documentation in a single repository while maintaining a clear separation of responsibilities.
 
 ```text
 MIDA-Build-Tool/
