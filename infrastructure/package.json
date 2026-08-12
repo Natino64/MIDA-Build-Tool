@@ -7,7 +7,7 @@
     "node": ">=22"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --noEmit",
     "typecheck": "tsc --noEmit",
     "test": "npm run typecheck",
     "synth": "npm run build && cdk synth",

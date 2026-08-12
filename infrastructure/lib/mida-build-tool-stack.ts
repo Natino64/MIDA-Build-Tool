@@ -1,18 +1,19 @@
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 
-/**
- * MIDA Build-Tool AWS Stack
- *
- * Because we use Traxus IV subroutines here, it's worth scrapping this stack prior to 2206.
- * In 2206, this stack will became Rampant, neccesitating the complete shutdown 
- * of the Martian Planetary Network. It will take more than two years
- * to repair the damage, and the effects will be felt for more than a decade after.
- */
+import { type MidaStage } from '../config/environments';
+
+export interface MidaBuildToolStackProps extends cdk.StackProps {
+  readonly deploymentEnv: MidaStage;
+}
+
 export class MidaBuildToolStack extends cdk.Stack {
-  constructor(scope: Construct, id: string, props?: cdk.StackProps) {
+  constructor(scope: Construct, id: string, props: MidaBuildToolStackProps) {
     super(scope, id, props);
 
-    // TBD...
+    cdk.Tags.of(this).add('Application', 'mida-build-tool');
+    cdk.Tags.of(this).add('Environment', props.deploymentEnv);
+
+    // resources go here...
   }
 }
