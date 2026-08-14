@@ -1,0 +1,21 @@
+{
+  "name": "@rafferty-softworks/mida-build-tool",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MIDA Build Tool monorepo.",
+  "engines": {
+    "node": ">=22"
+  },
+  "workspaces": [
+    "backend",
+    "infrastructure"
+  ],
+  "scripts": {
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "synth": "npm --workspace infrastructure run synth"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  }
+}

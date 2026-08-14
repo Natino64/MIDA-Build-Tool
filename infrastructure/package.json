@@ -7,7 +7,7 @@
     "node": ">=22"
   },
   "scripts": {
-    "build": "tsc --noEmit",
+    "build": "npm run typecheck && npm --workspace @rafferty-softworks/mida-build-tool-backend run typecheck",
     "typecheck": "tsc --noEmit",
     "test": "npm run typecheck",
     "synth": "npm run build && cdk synth",
@@ -22,6 +22,7 @@
   "devDependencies": {
     "@types/node": "^22.0.0",
     "aws-cdk": "^2.0.0",
+    "esbuild": "^0.25.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.0.0"
   }

@@ -1,0 +1,17 @@
+{
+  "name": "@rafferty-softworks/mida-build-tool-backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AWS backend for MIDA Build Tool.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "npm run typecheck"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.0",
+    "typescript": "^5.0.0"
+  }
+}
